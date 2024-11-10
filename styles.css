@@ -1,0 +1,132 @@
+@import url(./src/styles/UI.css);
+@import url(./src/styles/profile.css);
+@import url(./src/styles/articles.css);
+@import url(./src/styles/portfolio.css);
+
+:root {
+	--zinc-900: #18181b;
+	--zinc-800: #27272a;
+	--zinc-700: #3f3f46;
+	--zinc-600: #52525b;
+	--zinc-400: #a1a1aa;
+	--primary-text-color: rgb(90, 90, 90);
+	--secondary-text-color: rgb(70, 70, 70);
+	--contrast-text-color: rgb(167, 82, 3);
+	--profile-width: 300px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	/* overflow: hidden; */
+	color: var(--primary-text-color);
+}
+
+.icon:hover {
+	cursor: pointer;
+}
+
+header {
+	min-height: 2em;
+	padding: 0 1em 0;
+	background-color: var(--zinc-900);
+}
+
+.navbar {
+	padding: 1em;
+}
+
+.navbar .icon {
+	margin-left: auto;
+}
+
+.navbar-nav.in-viewport {
+	transform: translateX(100vw);
+}
+
+.nav-link {
+	color: inherit;
+}
+
+.nav-link-active {
+	color: var(--contrast-text-color);
+}
+
+.navbar-nav .nav-link.show {
+	color: var(--contrast-text-color);
+}
+
+.nav-link:hover {
+	color: var(--contrast-text-color);
+}
+
+main {
+	flex-basis: 100%;
+	flex-grow: 1;
+	max-height: calc(90vh - 2em);
+	padding: 1em;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--zinc-800) var(--zinc-900);
+	background-color: var(--zinc-800);
+}
+
+.works-carousel .carousel-inner {
+	height: auto;
+}
+
+.main__article {
+	max-height: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	transition: 200ms;
+}
+
+.main__article:hover {
+	cursor: pointer;
+	transform: scale3d(1.02, 1.1, 1);
+}
+
+footer {
+	height: 10vh;
+	background-color: var(--zinc-900);
+}
+
+@media (min-width: 768px) {
+	body:not(:first-child) {
+		width: calc(100% - var(--profile-width));
+		float: right;
+	}
+
+	header {
+		min-height: auto;
+	}
+
+	.navbar {
+		padding: 0;
+	}
+
+	.navbar .icon {
+		display: none;
+	}
+
+	.navbar-nav {
+		margin-left: auto;
+		margin-right: 3em;
+		position: static;
+		height: auto;
+		width: auto;
+	}
+
+	#nav-trigger {
+		display: none;
+	}
+
+	main {
+		max-height: calc(90vh - 2.5em);
+	}
+}

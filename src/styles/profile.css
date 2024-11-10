@@ -1,0 +1,85 @@
+.profile {
+	position: absolute;
+	top: 0;
+	left: calc(-100vw - 1em);
+	height: 100vh;
+	width: 100%;
+	padding: 3em 1em 2em;
+	overflow-y: scroll;
+	transition: 250ms ease-out;
+	background-color: var(--zinc-900);
+	scrollbar-width: thin;
+	scrollbar-color: var(--zinc-800) var(--zinc-900);
+	z-index: 3;
+}
+
+.profile.in-viewport {
+	transform: translateX(calc(100vw + 1em));
+}
+
+.profile #nav-trigger {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+.card {
+	flex-direction: row;
+	color: inherit;
+	background-color: inherit;
+	border-width: 0;
+}
+
+.card__img {
+	align-self: center;
+	width: 65px;
+	height: 65px;
+	border: 2px solid #c1c1c1;
+	border-radius: 50%;
+}
+
+.card__social {
+	margin-top: 5px;
+}
+
+.profile__brief {
+	color: var(--primary-text-color);
+}
+
+.profile__btns {
+	display: flex;
+	gap: 1em;
+}
+
+.profile__btn {
+	color: var(--contrast-text-color);
+	border: 1px solid var(--contrast-text-color);
+	transition: 200ms;
+}
+
+.profile__btn:hover {
+	color: var(--contrast-text-color);
+	transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+	.profile {
+		width: var(--profile-width);
+		border: 1px solid var(--zinc-800);
+		left: 0;
+		background-color: var(--zinc-900);
+	}
+
+	.profile.in-viewport {
+		transform: unset;
+	}
+
+	.profile__btn:hover {
+		transform: unset;
+		background-color: var(--zinc-800);
+	}
+
+	.card-body {
+		margin-right: -1em;
+	}
+}

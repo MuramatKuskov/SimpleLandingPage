@@ -1,0 +1,38 @@
+.language {
+	position: absolute;
+	top: 0.8em;
+	right: 1.5em;
+	width: 1.2em;
+	z-index: 5;
+}
+
+.language:hover {
+	cursor: pointer;
+}
+
+.social {
+	display: flex;
+	gap: 7px;
+}
+
+.social__link img {
+	width: 16px;
+}
+
+.btn:hover {
+	border: 1px solid var(--contrast-text-color);
+}
+
+.btn__link {
+	text-decoration: none;
+}
+
+.carousel-control-prev-icon {
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control-next-icon {
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+}

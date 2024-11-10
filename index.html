@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
+    <title>Kuskov | Homepage</title>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <div class="card">
+                <img src="./public/images/avatar.jpg" alt="Avatar" class="card__img card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title" id="card-name">&#x2800;</h5>
+                    <h6 class="card-subtitle" id="card-description">&#x2800;</h6>
+                    <div class="social card__social">
+                        <a href="https://www.instagram.com/muramatkuskov/" class="social__link" target="_blank">
+                            <img src="./public/icons/Instagram_logo_2016.svg" alt="Instagram logo" class="social__icon">
+                        </a>
+                        <a href="https://telegram.me/Muramat_Kuskov" class="social__link" target="_blank">
+                            <img src="./public/icons/Telegram_logo.svg" alt="Telegram" class="social__icon">
+                        </a>
+                        <a href="https://github.com/MuramatKuskov" class="social__link" target="_blank">
+                            <img src="./public/icons/Octicons-mark-github.svg" alt="GitHub" class="social__icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/muramatkuskov/" class="social__link" target="_blank">
+                            <img src="./public/icons/LinkedIn_icon.svg" alt="LinkedIn" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="profile__brief" id="profile-brief"></p>
+            <nav class="navbar navbar-expand-md">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="nav-link nav-link-active" id="link-main" aria-current="page"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/pages/Articles.html" id="link-articles"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/pages/About.html" id="link-about"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/pages/Portfolio.html" id="link-portfolio"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile__btns">
+                <a href="./public/pages/Portfolio.html" class="btn profile__btn btn__link"
+                    id="profile-portfolio-btn"></a>
+                <a href="mailto:habroserhii@gmail.com" class="btn profile__btn btn__link" id="profile-mail"></a>
+            </div>
+        </div>
+        <img class="icon" src="./public/icons/List.svg" id="nav-trigger" alt="Toggle sidebar">
+    </header>
+
+    <main>
+        <div class="carousel works-carousel slide my-2" id="works-carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#works-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#works-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#works-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#works-carousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#works-carousel" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#works-carousel" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../public/images/works/BlackJackGame.png" class="w-100 crop" alt="Image">
+                    <div class="carousel-caption">
+                        <h5><a href="./public/pages/Portfolio.html#cards" class="cards-heading">&#x2800;</a></h5>
+                        <p class="cards-text d-none d-md-block"></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../public/images/works/Melan.png" class="carousel-mosaic-img" alt="Image">
+                    <img src="../../public/images/works/Monaco.png" class="carousel-mosaic-img" alt="Image">
+                    <img src="../../public/images/works/Pchelk.png" class="carousel-mosaic-img" alt="Image">
+                    <img src="../../public/images/works/Jim-N-Rgy.png" class="carousel-mosaic-img" alt="Image">
+                    <img src="../../public/images/works/Corporate.png" class="carousel-mosaic-img" alt="Image">
+                    <img src="../../public/images/works/Plonq.png" class="carousel-mosaic-img" alt="Image">
+                    <div class="carousel-caption">
+                        <h5><a href="./public/pages/Portfolio.html#layouts" class="layouts-heading">&#x2800;</a></h5>
+                        <p class="layouts-text d-none d-md-block"></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../public/images/works/Cyberbiology.png" class="w-100 object-fit-contain" alt="Image">
+                    <div class="carousel-caption">
+                        <h5><a href="./public/pages/Portfolio.html#cyberbiology"
+                                class="cyberbiology-heading">&#x2800;</a></h5>
+                        <p class="cyberbiology-text d-none d-md-block"></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../public/images/works/Tusk.png" class="w-100 object-fit-contain" alt="Image">
+                    <div class="carousel-caption">
+                        <h5><a href="./public/pages/Portfolio.html#tusk" class="tusk-heading">&#x2800;</a></h5>
+                        <p class="tusk-text d-none d-md-block"></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../public/images/works/Trident.png" class="w-100 object-fit-contain" alt="Image">
+                    <div class="carousel-caption">
+                        <h5><a href="./public/pages/Portfolio.html#trident" class="trident-heading">Trident
+                                Automotive</a></h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../public/images/works/SF.png" class="w-100 object-fit-contain" alt="Image">
+                    <div class="carousel-caption">
+                        <h5><a href="./public/pages/Portfolio.html#sf">SF — Stonks Finder</a></h5>
+                        <p class="stonks-text d-none d-md-block"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#works-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#works-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <article class="article main__article" id="article-block-universe">
+            <h2 class="title article__title" id="block-universe-heading">&#x2800;</h2>
+            <small class="subtitle article__topic" data-topic="physics"></small>
+            <div class="article__content article__text" id="block-universe">
+            </div>
+        </article>
+
+        <article class="article main__article" id="article-consciousness-ontology">
+            <h2 class="title article__title" id="consciousness-ontology-heading">&#x2800;</h2>
+            <small class="subtitle article__topic" data-topic="consciousness"></small>
+            <div class="article__content article__text" id="consciousness-ontology">
+            </div>
+        </article>
+
+        <article class="article main__article" id="article-programming">
+            <h2 class="title article__title" id="programming-heading">&#x2800;</h2>
+            <small class="subtitle article__topic" data-topic="programming"></small>
+            <div class="article__content article__text" id="programming">
+            </div>
+        </article>
+
+        <article class="article main__article" id="article-info-universe">
+            <h2 class="title article__title" id="information-universe-heading">&#x2800;</h2>
+            <small class="subtitle article__topic" data-topic="physics"></small>
+            <div class="article__content article__text" id="information-universe">
+            </div>
+        </article>
+
+        <article class="article main__article" id="article-inspiration">
+            <h2 class="title article__title" id="inspiration-heading">&#x2800;</h2>
+            <small class="subtitle article__topic" data-topic="inspiration"></small>
+            <div class="article__content article__text" id="inspiration">
+            </div>
+        </article>
+
+        <article class="article main__article" id="article-conscious-animals">
+            <h2 class="title article__title" id="conscious-animals-heading">&#x2800;</h2>
+            <small class="subtitle article__topic" data-topic="consciousness"></small>
+            <div class="article__content article__text" id="conscious-animals">
+            </div>
+        </article>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
