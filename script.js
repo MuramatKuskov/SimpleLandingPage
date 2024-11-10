@@ -146,6 +146,7 @@ function linkArticles() {
 	document.querySelectorAll(".article").forEach(article => {
 		article.addEventListener("click", event => {
 			window.location.href = "public/pages/Articles.html#" + event.target.id;
+			window.location.href = "public/pages/Articles.html#" + event.target.id;
 		});
 	});
 }
