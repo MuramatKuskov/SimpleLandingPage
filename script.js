@@ -49,15 +49,15 @@ function handlePositionedContent(isLarge) {
 
 function initLanguage(page) {
 	const trigger = document.createElement("img");
-	trigger.src = LANGUAGE === "en" ? "/public/icons/UK.svg" : "/public/icons/UA.svg";
+	trigger.src = LANGUAGE === "en" ? "public/icons/UK.svg" : "public/icons/UA.svg";
 	trigger.classList.add("language");
 	trigger.addEventListener("click", () => {
 		if (LANGUAGE === "en") {
 			LANGUAGE = "ua";
-			trigger.src = "/public/icons/UA.svg";
+			trigger.src = "public/icons/UA.svg";
 		} else {
 			LANGUAGE = "en";
-			trigger.src = "/public/icons/UK.svg";
+			trigger.src = "public/icons/UK.svg";
 		}
 		initLocaleText(page);
 	});
@@ -140,7 +140,7 @@ function initNavTrigger() {
 function linkArticles() {
 	document.querySelectorAll(".article").forEach(article => {
 		article.addEventListener("click", event => {
-			window.location.href = "/public/pages/Articles.html#" + event.target.id;
+			window.location.href = "public/pages/Articles.html#" + event.target.id;
 		});
 	});
 }
