@@ -12,7 +12,7 @@ function main() {
 	initLanguage(page);
 	initLocaleText(page);
 	initNavTrigger();
-	if (page === "index") linkArticles();
+	if (page === "index" || !page.length) linkArticles();
 }
 
 function initResponsiveBehaviour() {
@@ -49,7 +49,7 @@ function handlePositionedContent(isLarge) {
 
 function initLanguage(page) {
 	const trigger = document.createElement("img");
-	if (page === "index") {
+	if (page === "index" || !page.length) {
 		trigger.src = LANGUAGE === "en" ? "public/icons/UK.svg" : "public/icons/UA.svg";
 	} else {
 		trigger.src = LANGUAGE === "en" ? "../../public/icons/UK.svg" : "../../public/icons/UA.svg";
@@ -59,10 +59,10 @@ function initLanguage(page) {
 	trigger.addEventListener("click", () => {
 		if (LANGUAGE === "en") {
 			LANGUAGE = "ua";
-			trigger.src = page === "index" ? "public/icons/UA.svg" : "../../public/icons/UA.svg";
+			trigger.src = (page === "index" || !page.length) ? "public/icons/UA.svg" : "../../public/icons/UA.svg";
 		} else {
 			LANGUAGE = "en";
-			trigger.src = page === "index" ? "public/icons/UK.svg" : "../../public/icons/UK.svg";
+			trigger.src = (page === "index" || !page.length) ? "public/icons/UK.svg" : "../../public/icons/UK.svg";
 		}
 		initLocaleText(page);
 	});
@@ -84,7 +84,7 @@ function initLocaleText(page) {
 		insertText(key, page);
 	}
 
-	if (page === "index") {
+	if (page === "index" || !page.length) {
 		for (const key in TEXT_NODES.articles) {
 			insertText(key, "articles");
 		}
